@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Calculadora de Imposto</h1>
+      <div class="calculator">
+        <div class="col">
+          <label for="value">
+            Valor
+            <input id="value" name="value" type="number" >
+          </label>
+          <div class="row">
+            <label for="quotation">
+              Cotação
+              <input id="quotation" name="quotatio" type="number">
+            </label>
+            <label for="tax">
+              Imposto
+              <input type="number" id="tax" name="tax">
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <label for="result">
+            Resultado
+            <input type="number" id="result" name="result" disabled>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
