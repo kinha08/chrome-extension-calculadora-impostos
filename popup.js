@@ -26,6 +26,7 @@ window.onload = () => {
     let quotation = document.getElementById('quotation');
     let tax = document.getElementById('tax');
     let result = document.getElementById('result');
+    let result_value_tax = document.getElementById('result-value-tax');
 
     value.focus();
     
@@ -39,11 +40,13 @@ window.onload = () => {
         quotation.value = valueGet.quotation;
         tax.value = valueGet.tax;
         result.value = (value.value * tax.value / quotation.value).toFixed(2);
+        result_value_tax.value = (value.value * tax.value).toFixed(2);
     });
 
 
     function changeValue(ev) {
         result.value = (value.value * tax.value / quotation.value).toFixed(2);
+        result_value_tax.value = (value.value * tax.value).toFixed(2);
         chrome.storage.sync.set({value: value.value, quotation: quotation.value, tax: tax.value});
     }
 }

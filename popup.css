@@ -37,9 +37,9 @@
   width: 100%;
  }
 
- .calculator input[name="result"] {
+ /* .calculator input[name="result"] {
   height: 50px;
- }
+ } */
 
  .container div:first-child {
   margin-right: 20px;
